@@ -6,7 +6,7 @@ plugins {
 
 android {
     namespace = "com.kmobile.ancientegypt"
-    compileSdk = 35
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.kmobile.ancientegypt"
@@ -56,6 +56,7 @@ dependencies {
     // Retrofit
     implementation(libs.retrofit.core)
     implementation(libs.retrofit.gson)
+    implementation(libs.retrofit.jackson)
 
     // OkHttp (logs)
     implementation(libs.okhttp.logging)

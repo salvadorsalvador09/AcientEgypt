@@ -12,6 +12,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.tutorials.navigation.AppNavGraph
+import com.kmobile.ancientegypt.ui.screen.departments.DepartmentsScreen
+import com.kmobile.ancientegypt.ui.screen.departments.DepartmentsViewModel
 import com.kmobile.ancientegypt.ui.theme.AncientEgyptTheme
 
 class MainActivity : ComponentActivity() {
@@ -20,7 +22,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             AncientEgyptTheme {
-                AppNavGraph()
+                val container = AppContainer()
+                val vm = DepartmentsViewModel(container.museumRepository)
+                DepartmentsScreen(viewModel = vm, onDepartmentClick = { /* navegar */ })
+
             }
         }
     }

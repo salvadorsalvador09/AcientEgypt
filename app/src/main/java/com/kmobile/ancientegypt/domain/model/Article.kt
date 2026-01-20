@@ -1,4 +1,4 @@
-package com.kmobile.ancientegypt.data.model
+package com.kmobile.ancientegypt.domain.model
 
 import androidx.annotation.DrawableRes
 

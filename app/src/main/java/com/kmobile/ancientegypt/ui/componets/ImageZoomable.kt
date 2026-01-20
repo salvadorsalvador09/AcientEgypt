@@ -1,4 +1,4 @@
-package com.kmobile.ancientegypt.ui_kit.componets
+package com.kmobile.ancientegypt.ui.componets
 
 class ImageZoomable {
 }
