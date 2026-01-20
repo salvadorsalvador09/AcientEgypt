@@ -57,6 +57,7 @@ dependencies {
     implementation(libs.retrofit.core)
     implementation(libs.retrofit.gson)
     implementation(libs.retrofit.jackson)
+    implementation(libs.datastore.preferences)
 
     // OkHttp (logs)
     implementation(libs.okhttp.logging)
